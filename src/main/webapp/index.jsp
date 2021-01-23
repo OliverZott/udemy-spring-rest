@@ -1,18 +1,28 @@
 <html>
 <body>
-<h2>This is index.jsp!</h2>
+<h1>This is index.jsp!</h1>
 
+
+<!-- Link without forward-slash -->
 <a href="test/hello">REST Endpoint</a>
+
 <br>
+<br>
+<hr>
+<h3>API-Endpoints</h3>
+
 <!-- Link with forward-slash -->
-${pageContext.request.contextPath}
-<br>
-<a href="${pageContext.request.contextPath}/test/hello">REST Endpoint</a>
+<div>
+    <b>Students - Collection Operation: </b>
 
-<br>
+    <p>
+    <div>
+        <a href="${pageContext.request.contextPath}/api/students">${pageContext.request.contextPath}/api/students</a>
+    </div>
+    </p>
 
-<h3>Endpoint</h3>
-<a href="${pageContext.request.contextPath}/api/students">Students - Collection Operation</a>
+
+</div>
 
 </body>
 </html>
