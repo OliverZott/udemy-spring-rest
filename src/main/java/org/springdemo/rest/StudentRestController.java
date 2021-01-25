@@ -15,6 +15,7 @@ public class StudentRestController {
 
     private final List<Student> students = new ArrayList<>();
 
+    // Lifecycle Callback
     @PostConstruct
     public void loadData() {
         students.add(new Student("vn1", "vn1"));
